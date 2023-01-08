@@ -1,0 +1,29 @@
+.logo-container {
+  position: relative;
+  width: 200px;
+  height: 200px;
+}
+
+.logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: sans-serif;
+  color: purple;
+  font-size: 32px;
+  text-align: center;
+}
+
+.logo-container {
+  perspective: 1000px;
+}
+
+.logo {
+  transform: translate(-50%, -50%) rotateX(45deg) rotateY(45deg);
+}
+
+.rotating {
+  transform: translate(-50%, -50%) rotateX(45deg) rotateY(45deg) rotateZ(180deg);
+  transition: transform 2s ease-in-out;
+}
